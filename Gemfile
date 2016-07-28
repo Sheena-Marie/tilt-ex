@@ -16,7 +16,6 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'httparty'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'nokogiri'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
