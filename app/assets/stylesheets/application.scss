@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 // For the Rio logo
+
 .rio {
   width: 25%;
   position: absolute;
@@ -20,23 +21,39 @@
   margin-top: 5%;
   text-align: center;
   font-size: 4em;
+  color: #015880;
+  font-weight: bold;
+  font-family: helvetica, sans-serif;
 }
 
 .api {
   margin-top: 5%;
   text-align: center;
   font-size: 1.5em;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  color: #48B1D4;
 }
 
 .desc {
   font-size: 1.3em;
   margin-left: 20%;
   margin-right: 20%;
+  font-family: helvetica, sans-serif;
+}
+
+.bord {
+  border: 1px black solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .link {
-  margin-left: 45%;
-  margin-right: 45%;
+  margin-left: 40%;
+  margin-top: 5%;
+  padding: 10px;
 }
 
 .timer {
