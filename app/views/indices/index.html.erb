@@ -15,8 +15,33 @@
 <h1 class="col-md-12 title">Let's Get Alyssa to the Olympics</h1>
 <br>
 
-<%= @contributors %>
-<%= @raised_amount  %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="api"><%= @contributors %> people have contributed</p>
+    </div>
 
+    <div class="col-md-6">
+      <p class="api"><%= @raised_amount %> so far</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="box">
+    <p class="desc">
+      Between ongoing medical expenses, living expenses and training full time to prepare for the biggest race of her life, it all adds up.
+    </p>
+    <p class="desc">
+    No donation is too small. Please help Allysa on her journey to Rio and make sure that she gets all the support she needs to get her chance at GOLD!
+    </p>
+  </div>
+</div>
+
+<%= link_to 'Click for More', 'https://www.tilt.com/tilts/lets-get-allysa-to-the-rio-olympics', class: 'btn btn-lg btn-primary link' %>
 <!-- Partial for the countdown timer to the Olympic Games widget. This was originally sitting at the top of the page, but works better at the bottom. -->
+
+<div class="timer">
 <%= render 'timer' %>
+</div>
