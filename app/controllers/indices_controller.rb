@@ -1,6 +1,16 @@
 class IndicesController < ApplicationController
   before_action :set_index, only: [:show, :edit, :update, :destroy]
 
+  require 'ostruct'
+  require 'json'
+
+  def index
+    response = HTTParty.get('https://www.tilt.com/tilts/lets-get-allysa-to-the-rio-olympics/stats.json')
+    obj = JSON.parse(response, object_class: OpenStruct)
+
+    @contributors = obj.campaign.contributions
+    @raised_amount = obj.campaign.quantity_text
+  end
 
 
 
