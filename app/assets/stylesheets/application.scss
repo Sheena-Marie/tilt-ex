@@ -1,11 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// For the Rio logo
 .rio {
-  width: 30%;
-  
+  width: 25%;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
+// For the picture
 .picture {
   width: 75%;
+}
+
+.title {
+  text-align: center;
 }
