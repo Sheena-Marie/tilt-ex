@@ -1,9 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 
-
+<!-- Rio Olympics logo -->
 <%= image_tag "rio.jpg", class: "rio col-md-12" %>
+
+<!-- Picture from the Tilt page -->
 <%= image_tag "picture.jpg", class: "picture col-md-4" %>
 <br>
+
+<!--  -->
+
+<!-- Title  -->
 <h1 class="col-md-12 title">Let's Get Alyssa to the Olympics</h1>
+<br>
+
+<!-- Partial for the countdown timer to the Olympic Games widget. This was originally sitting at the top of the page, but works better at the bottom. -->
 <%= render 'timer' %>
