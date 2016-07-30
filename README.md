@@ -1,5 +1,7 @@
 # tilt-ex
 
+Link to the page on Heroku: https://desolate-oasis-57929.herokuapp.com
+
 ##Problem:
 A Tilt user really loves all the Tilt platform features, but would like to have a landing page. The landing page could be customized with a logo and a unique design.
 He/She comes to you and asks you to develop the landing page.
