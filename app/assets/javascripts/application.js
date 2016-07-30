@@ -15,3 +15,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+window.onload = function() {
+ var clock = document.getElementById("countdown-holder"),
+ targetDate = new Date(2016, 07, 05); // Jan 1, 2050;
+
+  clock.innerHTML = countdown(targetDate).toString();
+  setInterval(function(){
+    clock.innerHTML = countdown(targetDate).toString();
+  }, 1000);
+};
