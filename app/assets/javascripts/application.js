@@ -16,12 +16,23 @@
 //= require turbolinks
 //= require_tree .
 
-window.onload = function() {
- var clock = document.getElementById("countdown-holder"),
- targetDate = new Date(2016, 07, 05); // Jan 1, 2050;
+// window.onload = function() {
+//  var clock = document.getElementById("countdown-holder"),
+//  targetDate = new Date(2016, 07, 05); // Jan 1, 2050;
+//
+//   clock.innerHTML = countdown(targetDate).toString();
+//   setInterval(function(){
+//     clock.innerHTML = countdown(targetDate).toString();
+//   }, 1000);
+// };
 
-  clock.innerHTML = countdown(targetDate).toString();
-  setInterval(function(){
-    clock.innerHTML = countdown(targetDate).toString();
-  }, 1000);
-};
+// setInterval(function(){
+//      $('#counter').load("<%= j(render :partial => 'timer') %>");
+// }, 1000);
+
+setInterval(function() {
+        $.ajax({
+            type: "GET",
+            url: "indices" + "/timer"
+        });
+   }, 1000);

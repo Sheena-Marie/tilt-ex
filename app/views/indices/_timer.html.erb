@@ -1,2 +1,39 @@
-<h2>Countdown to the Rio Olympics</h2>
-<h1 id="countdown-holder"></h1>
+<h1>Time Remaining</h1>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <p>days</p>
+    </div>
+    <div class="col-md-3">
+      <p>hours</p>
+    </div>
+    <div class="col-md-3">
+      <p>minutes</p>
+    </div>
+    <div class="col-md-3">
+      <p>seconds</p>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="timer">Days</th>
+        <th class="timer">Hours</th>
+        <th class="timer">Minutes</th>
+        <th class="timer">Seconds</th>
+      </tr>
+    </thead>
+    <tbody id="counter">
+      <tr>
+          <td class=""><%= @days %></td>
+          <td class=""><%= @hours %></td>
+          <td class=""><%= @minutes %></td>
+          <td class=""><%= @seconds %></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
