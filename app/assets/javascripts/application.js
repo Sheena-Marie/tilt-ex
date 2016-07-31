@@ -26,13 +26,6 @@
 //   }, 1000);
 // };
 
-// setInterval(function(){
-//      $('#counter').load("<%= j(render :partial => 'timer') %>");
-// }, 1000);
-
-setInterval(function() {
-        $.ajax({
-            type: "GET",
-            url: "indices" + "/timer"
-        });
-   }, 1000);
+setInterval(function(){
+     $('#counter').load('/');
+}, 20000);
