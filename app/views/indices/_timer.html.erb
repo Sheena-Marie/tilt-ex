@@ -1,20 +1,31 @@
 <p class="timer">Time Remaining</p>
 <div class="container">
+
   <table class="table">
     <thead>
       <tr>
         <th class="timer">Days</th>
         <th class="timer">Hours</th>
         <th class="timer">Minutes</th>
+        <th class="timer">Seconds</th>
       </tr>
     </thead>
     <tbody id="counter">
       <tr>
-          <td class="timer2"><%= @days %></td>
-          <td class="timer2"><%= @hours %></td>
-          <td class="timer2"><%= @minutes %></td>
+          <td id="day" class="timer2"><%= @countdown_expiry.days %></td>
+          <td id="hours" class="timer2"><%= @countdown_expiry.hours %></td>
+          <td id="minutes" class="timer2"><%= @countdown_expiry.minutes %></td>
+          <td id="seconds" class="timer2"><%= @countdown_expiry.seconds %></td>
       </tr>
     </tbody>
   </table>
+
+  <script>
+
+  $('#hours').text(duration.hours())
+  $('#day').text(duration.days())
+  $('#minutes').text(duration.minutes())
+  $('#seconds').text(duration.seconds())
+  </script>
 
 </div>

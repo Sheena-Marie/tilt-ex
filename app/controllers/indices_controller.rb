@@ -10,10 +10,13 @@ class IndicesController < ApplicationController
 
     @contributors = obj.campaign.contributions
     @raised_amount = obj.campaign.quantity_text
-    @minutes = obj.campaign.expires_in.minutes
-    @hours = obj.campaign.expires_in.hours
-    @days = obj.campaign.expires_in.days
-    @seconds = obj.campaign.expires_in.seconds
+    # @minutes = obj.campaign.expires_in.minutes
+    # @hours = obj.campaign.expires_in.hours
+    # @days = obj.campaign.expires_in.days
+    # @seconds = obj.campaign.expires_in.seconds
+
+    # count down expiry, from rails
+    @countdown_expiry = obj.campaign.expires_in
   end
 
   # commenting out all the info that came with Rails Scaffold for now as I might need some of it, I might need to change some of it, I might not need it, but I don't want to delete it yet just in case.
